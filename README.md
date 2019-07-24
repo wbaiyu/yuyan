@@ -34,5 +34,19 @@ respeaker v2入手
    python ns_kws_alexa_with_light.py
    ```
 
-
+----------------------------------------------------------------------
+配置和安装相关依赖
+pi@raspberrypi:~ $ source ~/env/bin/activate                  # 激活虚拟环境
+cd ~/
+git clone https://github.com/wbaiyu/yuyan
+cd yuyan
+python setup.py install
+sudo apt install gstreamer1.0
+sudo apt install gstreamer1.0-plugins-good
+sudo apt install gstreamer1.0-plugins-ugly
+sudo apt install python-gi gir1.2-gstreamer-1.0
+pip install tornado
+????
+alexa-auth     dueros-auth
+############授权的文件保存在/home/pi/.avs.json
 
